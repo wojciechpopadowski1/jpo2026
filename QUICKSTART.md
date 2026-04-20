@@ -1,4 +1,4 @@
-# 🚀 Szybki Start - PyScript AI Generator elo
+# 🚀 Szybki Start - PyScript AI Generator
 
 ## Dla Windows (najprostszy sposób)
 
