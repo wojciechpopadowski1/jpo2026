@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PyScript AI Generator
 
 ![C++](https://img.shields.io/badge/C++-17-blue.svg)
