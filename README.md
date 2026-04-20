@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PyScript AI Generator
 
 ![C++](https://img.shields.io/badge/C++-17-blue.svg)
@@ -384,3 +385,6 @@ Projekt spełnia wszystkie wymagania na ocenę 5.0:
 ---
 
 **Powodzenia w rozwoju aplikacji! 🚀**
+=======
+# jpo2026
+>>>>>>> e510e74e724d6aa50d30a0b5226045f4659160fd
