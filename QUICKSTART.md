@@ -1,11 +1,11 @@
-# 🚀 Szybki Start - PyScript AI Generator
+# Szybki Start - PyScript AI Generator
 
 ## Dla Windows (najprostszy sposób)
 
 ### 1. Wymagania wstępne
-- ✅ Windows 10/11
-- ✅ Qt Creator zainstalowane z https://www.qt.io/download
-- ✅ Python zainstalowany (sprawdź: `python --version`)
+- Windows 10/11
+- Qt Creator zainstalowane z https://www.qt.io/download
+- Python zainstalowany (sprawdź: `python --version`)
 
 ### 2. Instalacja Ollama (5 minut)
 
@@ -40,7 +40,7 @@
 
 1. Upewnij się, że Ollama działa (powinno być uruchomione w tle po instalacji)
 2. W aplikacji wpisz: **"oblicz sumę liczb od 1 do 100"**
-3. Kliknij **🚀 Generuj i Wykonaj**
+3. Kliknij **Generuj i Wykonaj**
 4. Obserwuj wynik!
 
 ---
@@ -142,5 +142,3 @@ xdg-open html/index.html  # Linux
 - 💡 Przykładowe prompty znajdziesz w `examples/example_prompts.txt`
 
 ---
-
-**Miłego kodowania! 🎉**
