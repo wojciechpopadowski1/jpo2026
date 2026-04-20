@@ -5,23 +5,23 @@
 ![Qt](https://img.shields.io/badge/Qt-6.x-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-## 📝 Opis Projektu
+## Opis Projektu
 
 **PyScript AI Generator** to zaawansowana aplikacja desktopowa napisana w C++ z wykorzystaniem frameworka Qt6. Aplikacja wykorzystuje lokalne modele językowe Ollama do automatycznego generowania i wykonywania kodu Python na podstawie opisu zadania w języku naturalnym.
 
 ### Główne Funkcje
 
-- 🤖 **Generowanie kodu Python** przy użyciu AI (Ollama)
-- ▶️ **Automatyczne wykonywanie** wygenerowanego kodu
-- 🖥️ **Przyjazny interfejs GUI** stworzony w Qt Widgets
-- 🧵 **Wielowątkowość** - operacje w tle nie blokują GUI
-- ✅ **Testy jednostkowe** (Google Test)
-- 📚 **Dokumentacja kodu** (Doxygen)
-- 🛡️ **Pełna obsługa błędów** i wyjątków
+- **Generowanie kodu Python** przy użyciu AI (Ollama)
+- **Automatyczne wykonywanie** wygenerowanego kodu
+- **Przyjazny interfejs GUI** stworzony w Qt Widgets
+- **Wielowątkowość** - operacje w tle nie blokują GUI
+- **Testy jednostkowe** (Google Test)
+- **Dokumentacja kodu** (Doxygen)
+- **Pełna obsługa błędów** i wyjątków
 
 ---
 
-## 🎯 Wymagania
+## Wymagania
 
 ### Oprogramowanie
 
@@ -42,7 +42,7 @@
 
 ---
 
-## 🚀 Instalacja i Uruchomienie
+## Instalacja i Uruchomienie
 
 ### Krok 1: Instalacja Ollama
 
@@ -152,7 +152,7 @@ cmake --build . --config Release
 
 ---
 
-## 🎮 Użytkowanie
+## Użytkowanie
 
 ### Podstawowe użycie
 
@@ -168,7 +168,7 @@ cmake --build . --config Release
    - "wygeneruj 10 losowych liczb i posortuj je"
    - "wypisz tabliczkę mnożenia dla liczby 7"
 
-4. **Kliknij przycisk "🚀 Generuj i Wykonaj"**
+4. **Kliknij przycisk "Generuj i Wykonaj"**
 
 5. **Obserwuj wyniki:**
    - Wygenerowany kod Python pojawi się w środkowym polu
@@ -181,7 +181,7 @@ Zobacz plik `examples/example_prompts.txt` dla inspiracji.
 
 ---
 
-## 🧪 Testy Jednostkowe
+## Testy Jednostkowe
 
 ### Kompilacja testów
 
@@ -206,7 +206,7 @@ ctest --output-on-failure
 
 ---
 
-## 📖 Dokumentacja Doxygen
+## Dokumentacja Doxygen
 
 ### Generowanie dokumentacji
 
@@ -233,7 +233,7 @@ open docs/html/index.html
 
 ---
 
-## 🏗️ Struktura Projektu
+## Struktura Projektu
 
 ```
 pyscript_ai_generator/
@@ -261,7 +261,7 @@ pyscript_ai_generator/
 
 ---
 
-## ⚙️ Konfiguracja
+## Konfiguracja
 
 ### Zmiana modelu Ollama
 
@@ -286,7 +286,7 @@ const int NETWORK_TIMEOUT = 60000;  // w milisekundach
 
 ---
 
-## 🛠️ Rozwój Projektu
+## Rozwój Projektu
 
 ### Otwieranie w Qt Creator
 
@@ -304,7 +304,7 @@ const int NETWORK_TIMEOUT = 60000;  // w milisekundach
 
 ---
 
-## 🐛 Rozwiązywanie Problemów
+## Rozwiązywanie Problemów
 
 ### Problem: "Nie można połączyć się z Ollama API"
 
@@ -340,51 +340,32 @@ set Qt6_DIR=C:\Qt\6.x\msvc2019_64\lib\cmake\Qt6
 
 ---
 
-## 📄 Licencja
+## Licencja
 
 Ten projekt jest dostępny na licencji MIT. Zobacz plik `LICENSE` dla szczegółów.
 
 ---
 
-## 👥 Autorzy
+## Autor
 
-- **PyScript AI Generator Team**
-- Projekt stworzony jako część przedmiotu "Języki Programowania Obiektowego"
-
----
-
-## 🙏 Podziękowania
-
-- [Qt Framework](https://www.qt.io/) - za doskonały framework GUI
-- [Ollama](https://ollama.ai/) - za lokalne modele językowe
-- [Google Test](https://github.com/google/googletest) - za framework testowy
+- Wojciech Popadowski
 
 ---
 
-## 📞 Kontakt
+## Wymagania projektowe :
 
-Jeśli masz pytania lub sugestie, utwórz **Issue** na GitHubie.
-
----
-
-## 🎓 Cele Edukacyjne
-
-Projekt spełnia wszystkie wymagania na ocenę 5.0:
-
-- ✅ Wykorzystuje model językowy (Ollama)
-- ✅ Automatycznie wykonuje wygenerowany kod
-- ✅ Posiada GUI (Qt Widgets)
-- ✅ Poprawnie obsługuje wyjątki
-- ✅ Wykorzystuje wielowątkowość (QThread)
-- ✅ Posiada dokumentację Doxygen
-- ✅ Wyposażony w testy jednostkowe (Google Test)
-- ✅ Gotowy do umieszczenia na GitHub
-- ✅ Działa na Windows
-- ✅ Komunikacja z użytkownikiem po polsku
+- Wykorzystuje model językowy (Ollama)
+- Automatycznie wykonuje wygenerowany kod
+- Posiada GUI (Qt Widgets)
+- Poprawnie obsługuje wyjątki
+- Wykorzystuje wielowątkowość (QThread)
+- Posiada dokumentację Doxygen
+- Wyposażony w testy jednostkowe (Google Test)
+- Gotowy do umieszczenia na GitHub
+- Działa na Windows
+- Komunikacja z użytkownikiem po polsku
 
 ---
-
-**Powodzenia w rozwoju aplikacji! 🚀**
 =======
 # jpo2026
 >>>>>>> e510e74e724d6aa50d30a0b5226045f4659160fd
