@@ -1,0 +1,96 @@
+Start testing: Apr 20 16:18 Œrodkowoeuropejski czas letni
+----------------------------------------------------------
+1/2 Testing: ExecutorTests
+1/2 Test: ExecutorTests
+Command: "C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/build-cmake/tests/test_executor.exe"
+Directory: C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/build-cmake/tests
+"ExecutorTests" start time: Apr 20 16:18 Œrodkowoeuropejski czas letni
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from PythonExecutorTest
+[ RUN      ] PythonExecutorTest.ExecuteSimpleCode
+PythonExecutor: Zainicjalizowano
+PythonExecutor: Rozpoczêcie wykonywania kodu
+PythonExecutor: Plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_aaOymH.py"
+PythonExecutor: Proces zakoñczony, kod wyjœcia: 0
+PythonExecutor: Usuniêto plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_aaOymH.py"
+PythonExecutor: Wykonanie zakoñczone pomyœlnie
+PythonExecutor: Zniszczono
+[       OK ] PythonExecutorTest.ExecuteSimpleCode (72 ms)
+[ RUN      ] PythonExecutorTest.ExecuteCalculation
+PythonExecutor: Zainicjalizowano
+PythonExecutor: Rozpoczêcie wykonywania kodu
+PythonExecutor: Plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_dPrlJf.py"
+PythonExecutor: Proces zakoñczony, kod wyjœcia: 0
+PythonExecutor: Usuniêto plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_dPrlJf.py"
+PythonExecutor: Wykonanie zakoñczone pomyœlnie
+PythonExecutor: Zniszczono
+[       OK ] PythonExecutorTest.ExecuteCalculation (61 ms)
+[ RUN      ] PythonExecutorTest.SyntaxError
+PythonExecutor: Zainicjalizowano
+PythonExecutor: Rozpoczêcie wykonywania kodu
+PythonExecutor: Plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_Ndvxhr.py"
+PythonExecutor: Proces zakoñczony, kod wyjœcia: 1
+PythonExecutor: Usuniêto plik tymczasowy: "C:/Users/wojty/AppData/Local/Temp/pyscript_Ndvxhr.py"
+PythonExecutor: "B³¹d wykonania kodu Python!\n\nB³¹d:\n  File \"C:\\Users\\wojty\\AppData\\Local\\Temp\\pyscript_Ndvxhr.py\", line 1\r\n    print('Hello'\r\n         ^\r\nSyntaxError: '(' was never closed\r\n"
+PythonExecutor: Zniszczono
+[       OK ] PythonExecutorTest.SyntaxError (138 ms)
+[ RUN      ] PythonExecutorTest.EmptyCode
+PythonExecutor: Zainicjalizowano
+PythonExecutor: Zniszczono
+[       OK ] PythonExecutorTest.EmptyCode (0 ms)
+[----------] 4 tests from PythonExecutorTest (273 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (273 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   6.34 sec
+----------------------------------------------------------
+Test Passed.
+"ExecutorTests" end time: Apr 20 16:18 Œrodkowoeuropejski czas letni
+"ExecutorTests" time elapsed: 00:00:06
+----------------------------------------------------------
+
+2/2 Testing: OllamaTests
+2/2 Test: OllamaTests
+Command: "C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/build-cmake/tests/test_ollama.exe"
+Directory: C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/build-cmake/tests
+"OllamaTests" start time: Apr 20 16:18 Œrodkowoeuropejski czas letni
+Output:
+----------------------------------------------------------
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from OllamaClientTest
+[ RUN      ] OllamaClientTest.CreateClient
+OllamaClient: Zainicjalizowano
+OllamaClient: Zniszczono
+[       OK ] OllamaClientTest.CreateClient (4 ms)
+[ RUN      ] OllamaClientTest.EmptyPrompt
+OllamaClient: Zainicjalizowano
+OllamaClient: Zniszczono
+[       OK ] OllamaClientTest.EmptyPrompt (0 ms)
+[ RUN      ] OllamaClientTest.CancelRequest
+OllamaClient: Zainicjalizowano
+OllamaClient: Wysy³anie promptu do modelu "llama3"
+OllamaClient: Anulowanie ¿¹dania
+OllamaClient: Zniszczono
+[       OK ] OllamaClientTest.CancelRequest (0 ms)
+[ RUN      ] OllamaClientTest.ConfigTest
+[       OK ] OllamaClientTest.ConfigTest (0 ms)
+[----------] 4 tests from OllamaClientTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (5 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.33 sec
+----------------------------------------------------------
+Test Passed.
+"OllamaTests" end time: Apr 20 16:18 Œrodkowoeuropejski czas letni
+"OllamaTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 20 16:18 Œrodkowoeuropejski czas letni

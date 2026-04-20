@@ -1,0 +1,112 @@
+# Przykładowe prompty do testowania PyScript AI Generator
+# Skopiuj i wklej do aplikacji
+
+# ===== PROSTE OBLICZENIA =====
+
+oblicz sumę liczb od 1 do 100
+
+oblicz silnię z liczby 10
+
+wygeneruj 20 losowych liczb z przedziału 1-100 i policz ich średnią
+
+# ===== OPERACJE NA LISTACH =====
+
+utwórz listę liczb od 1 do 50, wybierz tylko parzyste i podnieś je do kwadratu
+
+wygeneruj listę 10 losowych liczb, posortuj ją rosnąco i wypisz
+
+# ===== TABLICZKA MNOŻENIA =====
+
+wypisz tabliczkę mnożenia dla liczby 7
+
+wypisz pełną tabliczkę mnożenia od 1 do 10
+
+# ===== CIĄGI ZNAKÓW =====
+
+odwróć tekst "Hello World"
+
+policz ile razy występuje litera 'a' w tekście "Ala ma kota"
+
+# ===== LICZBY PIERWSZE =====
+
+znajdź wszystkie liczby pierwsze mniejsze niż 50
+
+sprawdź czy liczba 17 jest liczbą pierwszą
+
+# ===== SZEREG FIBONACCIEGO =====
+
+wygeneruj pierwsze 15 liczb ciągu Fibonacciego
+
+oblicz 20-tą liczbę Fibonacciego
+
+# ===== DATA I CZAS =====
+
+wypisz obecną datę i czas
+
+oblicz ile dni upłynęło od 1 stycznia 2024
+
+# ===== STATYSTYKA =====
+
+oblicz średnią, medianę i odchylenie standardowe dla listy: [12, 15, 18, 20, 22, 25, 30]
+
+# ===== KONWERSJE =====
+
+skonwertuj 100 stopni Fahrenheita na Celsjusza
+
+skonwertuj 5 kilometrów na mile
+
+# ===== GRY I ZABAWY =====
+
+wygeneruj losową liczbę od 1 do 100 i wypisz czy jest parzysta czy nieparzysta
+
+rzut kostką - wygeneruj losową liczbę od 1 do 6
+
+# ===== PRZETWARZANIE DANYCH =====
+
+utwórz słownik z 5 państwami i ich stolicami, a następnie wypisz je
+
+utwórz listę słowników reprezentujących 3 osoby (imię, wiek) i wypisz
+
+# ===== WZORY MATEMATYCZNE =====
+
+oblicz pole koła o promieniu 5
+
+oblicz objętość kuli o promieniu 3
+
+# ===== ZAAWANSOWANE (wymagają bibliotek) =====
+
+# Te przykłady działają jeśli masz zainstalowane odpowiednie biblioteki
+
+wygeneruj wykres funkcji sin(x) dla x od 0 do 2*pi (wymaga matplotlib)
+
+utwórz tablicę 5x5 wypełnioną losowymi liczbami (wymaga numpy)
+
+utwórz DataFrame pandas z danymi o 5 pracownikach (wymaga pandas)
+
+# ===== ALGORYTMY =====
+
+zaimplementuj sortowanie bąbelkowe dla listy [64, 34, 25, 12, 22, 11, 90]
+
+zaimplementuj wyszukiwanie binarne w posortowanej liście
+
+# ===== REKURENCJA =====
+
+oblicz sumę cyfr liczby 12345 używając rekurencji
+
+zaimplementuj rekurencyjne obliczanie potęgi: 2^10
+
+# ===== INNE =====
+
+wygeneruj losowe hasło z 12 znaków (litery i cyfry)
+
+policz ile słów jest w zdaniu "To jest testowe zdanie do policzenia słów"
+
+sprawdź czy słowo 'kajak' jest palindromem
+
+# ===== ZADANIA PRAKTYCZNE =====
+
+oblicz BMI dla wagi 70kg i wzrostu 175cm
+
+oblicz ile kalorii spalisz biegnijąc 30 minut przy spalaniu 10 kcal/min
+
+oblicz ratę kredytu: kapitał 100000, oprocentowanie 5%, okres 12 miesięcy

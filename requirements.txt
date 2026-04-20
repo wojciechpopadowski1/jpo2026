@@ -1,0 +1,19 @@
+# Requirements.txt - Opcjonalne zależności Python dla rozwiniętych funkcji
+
+# Podstawowe biblioteki do obliczeń
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Wizualizacja
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Użyteczne biblioteki
+requests>=2.26.0
+
+# Uwaga: Te biblioteki są opcjonalne i potrzebne tylko jeśli
+# użytkownik chce generować kod Python używający tych modułów.
+# Aplikacja PyScript AI Generator nie wymaga ich do działania.
+
+# Instalacja:
+# pip install -r requirements.txt

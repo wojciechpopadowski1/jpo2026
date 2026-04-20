@@ -1,0 +1,699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PyScript AI Generator: Dokumentacja klasy WorkerThread</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PyScript AI Generator<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Generator i wykonywacz kodu Python przy użyciu Ollama AI</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_worker_thread.html','','class_worker_thread-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy WorkerThread</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa wątku roboczego do obsługi generowania i wykonywania kodu.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="workerthread_8h_source.html">workerthread.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla WorkerThread</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_worker_thread.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-signals" class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a30e26417bfe051ef6f84e5e793473088" id="r_a30e26417bfe051ef6f84e5e793473088"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a30e26417bfe051ef6f84e5e793473088">codeGenerated</a> (const QString &amp;code)</td></tr>
+<tr class="memdesc:a30e26417bfe051ef6f84e5e793473088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany po wygenerowaniu kodu.  <br /></td></tr>
+<tr class="memitem:a75fc6c4e2b3c8d620f3c669a56fe90ef" id="r_a75fc6c4e2b3c8d620f3c669a56fe90ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a75fc6c4e2b3c8d620f3c669a56fe90ef">executionFinished</a> (const QString &amp;output)</td></tr>
+<tr class="memdesc:a75fc6c4e2b3c8d620f3c669a56fe90ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany po wykonaniu kodu.  <br /></td></tr>
+<tr class="memitem:aac9620567f8c13fb939c05fb37194a11" id="r_aac9620567f8c13fb939c05fb37194a11"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac9620567f8c13fb939c05fb37194a11">errorOccurred</a> (const QString &amp;error)</td></tr>
+<tr class="memdesc:aac9620567f8c13fb939c05fb37194a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany w przypadku błędu.  <br /></td></tr>
+<tr class="memitem:a4698c765707a3a46cc4610e7651919db" id="r_a4698c765707a3a46cc4610e7651919db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4698c765707a3a46cc4610e7651919db">progressUpdate</a> (const QString &amp;message)</td></tr>
+<tr class="memdesc:a4698c765707a3a46cc4610e7651919db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał informujący o postępie.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:ac16d186ae31d8fc592f720299020cc11" id="r_ac16d186ae31d8fc592f720299020cc11"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac16d186ae31d8fc592f720299020cc11">WorkerThread</a> (const QString &amp;prompt, QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:ac16d186ae31d8fc592f720299020cc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <br /></td></tr>
+<tr class="memitem:a5aa554e7d73f0f185a850ca0ef145d6d" id="r_a5aa554e7d73f0f185a850ca0ef145d6d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5aa554e7d73f0f185a850ca0ef145d6d">~WorkerThread</a> ()</td></tr>
+<tr class="memdesc:a5aa554e7d73f0f185a850ca0ef145d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
+<tr class="memitem:a59d7a256cad22f7967dfafeb5fe438d4" id="r_a59d7a256cad22f7967dfafeb5fe438d4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a59d7a256cad22f7967dfafeb5fe438d4">stopThread</a> ()</td></tr>
+<tr class="memdesc:a59d7a256cad22f7967dfafeb5fe438d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zatrzymuje wątek.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a7d48604849d66bdaa5e46b196eb745b6" id="r_a7d48604849d66bdaa5e46b196eb745b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7d48604849d66bdaa5e46b196eb745b6">run</a> () override</td></tr>
+<tr class="memdesc:a7d48604849d66bdaa5e46b196eb745b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Główna funkcja wątku.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-slots" class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a7a994bdc7197b47a15319e18fad18d15" id="r_a7a994bdc7197b47a15319e18fad18d15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a994bdc7197b47a15319e18fad18d15">onCodeReceived</a> (const QString &amp;code)</td></tr>
+<tr class="memdesc:a7a994bdc7197b47a15319e18fad18d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot wywoływany po otrzymaniu kodu z API.  <br /></td></tr>
+<tr class="memitem:a700be33db9f3a30164ef61c07607a702" id="r_a700be33db9f3a30164ef61c07607a702"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a700be33db9f3a30164ef61c07607a702">onExecutionDone</a> (const QString &amp;output)</td></tr>
+<tr class="memdesc:a700be33db9f3a30164ef61c07607a702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot wywoływany po zakończeniu wykonywania.  <br /></td></tr>
+<tr class="memitem:aff16fc7f995045657333a4ac9a62c69c" id="r_aff16fc7f995045657333a4ac9a62c69c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aff16fc7f995045657333a4ac9a62c69c">onGenerationError</a> (const QString &amp;error)</td></tr>
+<tr class="memdesc:aff16fc7f995045657333a4ac9a62c69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot wywoływany w przypadku błędu generowania.  <br /></td></tr>
+<tr class="memitem:adb26809103e63f1f7e7c556f883ab2a7" id="r_adb26809103e63f1f7e7c556f883ab2a7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb26809103e63f1f7e7c556f883ab2a7">onExecutionErrorSlot</a> (const QString &amp;error)</td></tr>
+<tr class="memdesc:adb26809103e63f1f7e7c556f883ab2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot wywoływany w przypadku błędu wykonania.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a36eec1580940bc49666aad46d370d41b" id="r_a36eec1580940bc49666aad46d370d41b"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#a36eec1580940bc49666aad46d370d41b">m_prompt</a></td></tr>
+<tr class="memdesc:a36eec1580940bc49666aad46d370d41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompt użytkownika.  <br /></td></tr>
+<tr class="memitem:ad1b0a46bdbee93850039a34be16c3ffb" id="r_ad1b0a46bdbee93850039a34be16c3ffb"><td class="memItemLeft"><a class="el" href="class_ollama_client.html">OllamaClient</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad1b0a46bdbee93850039a34be16c3ffb">m_ollamaClient</a></td></tr>
+<tr class="memdesc:ad1b0a46bdbee93850039a34be16c3ffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klient Ollama API.  <br /></td></tr>
+<tr class="memitem:ac23f8b3cab380bad29e8eb8ddefa3528" id="r_ac23f8b3cab380bad29e8eb8ddefa3528"><td class="memItemLeft"><a class="el" href="class_python_executor.html">PythonExecutor</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ac23f8b3cab380bad29e8eb8ddefa3528">m_pythonExecutor</a></td></tr>
+<tr class="memdesc:ac23f8b3cab380bad29e8eb8ddefa3528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executor kodu Python.  <br /></td></tr>
+<tr class="memitem:ad8ba7569f70f1c822ca5ed94d4178eb2" id="r_ad8ba7569f70f1c822ca5ed94d4178eb2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad8ba7569f70f1c822ca5ed94d4178eb2">m_shouldStop</a></td></tr>
+<tr class="memdesc:ad8ba7569f70f1c822ca5ed94d4178eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flaga zatrzymania wątku.  <br /></td></tr>
+<tr class="memitem:ae8c3802fa6ac66cb27c6949c8f2e2cae" id="r_ae8c3802fa6ac66cb27c6949c8f2e2cae"><td class="memItemLeft">QString&#160;</td><td class="memItemRight"><a class="el" href="#ae8c3802fa6ac66cb27c6949c8f2e2cae">m_generatedCode</a></td></tr>
+<tr class="memdesc:ae8c3802fa6ac66cb27c6949c8f2e2cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wygenerowany kod.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa wątku roboczego do obsługi generowania i wykonywania kodu. </p>
+<p>Używa QThread do wykonywania długotrwałych operacji (wywołania API, wykonanie kodu) bez blokowania GUI. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00023">23</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="ac16d186ae31d8fc592f720299020cc11" name="ac16d186ae31d8fc592f720299020cc11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac16d186ae31d8fc592f720299020cc11">&#9670;&#160;</a></span>WorkerThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkerThread::WorkerThread </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>prompt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompt</td><td>Prompt użytkownika </td></tr>
+    <tr><td class="paramname">parent</td><td>Wskaźnik do obiektu rodzica </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00013">13</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a5aa554e7d73f0f185a850ca0ef145d6d" name="a5aa554e7d73f0f185a850ca0ef145d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa554e7d73f0f185a850ca0ef145d6d">&#9670;&#160;</a></span>~WorkerThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WorkerThread::~WorkerThread </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00024">24</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a30e26417bfe051ef6f84e5e793473088" name="a30e26417bfe051ef6f84e5e793473088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30e26417bfe051ef6f84e5e793473088">&#9670;&#160;</a></span>codeGenerated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::codeGenerated </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał emitowany po wygenerowaniu kodu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Wygenerowany kod Python </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aac9620567f8c13fb939c05fb37194a11" name="aac9620567f8c13fb939c05fb37194a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac9620567f8c13fb939c05fb37194a11">&#9670;&#160;</a></span>errorOccurred</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::errorOccurred </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał emitowany w przypadku błędu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Komunikat błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75fc6c4e2b3c8d620f3c669a56fe90ef" name="a75fc6c4e2b3c8d620f3c669a56fe90ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fc6c4e2b3c8d620f3c669a56fe90ef">&#9670;&#160;</a></span>executionFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::executionFinished </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał emitowany po wykonaniu kodu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Wynik wykonania </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7a994bdc7197b47a15319e18fad18d15" name="a7a994bdc7197b47a15319e18fad18d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a994bdc7197b47a15319e18fad18d15">&#9670;&#160;</a></span>onCodeReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::onCodeReceived </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>code</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot wywoływany po otrzymaniu kodu z API. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Wygenerowany kod </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00086">86</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a700be33db9f3a30164ef61c07607a702" name="a700be33db9f3a30164ef61c07607a702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700be33db9f3a30164ef61c07607a702">&#9670;&#160;</a></span>onExecutionDone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::onExecutionDone </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot wywoływany po zakończeniu wykonywania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Wynik </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00105">105</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="adb26809103e63f1f7e7c556f883ab2a7" name="adb26809103e63f1f7e7c556f883ab2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb26809103e63f1f7e7c556f883ab2a7">&#9670;&#160;</a></span>onExecutionErrorSlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::onExecutionErrorSlot </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot wywoływany w przypadku błędu wykonania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Komunikat błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00119">119</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aff16fc7f995045657333a4ac9a62c69c" name="aff16fc7f995045657333a4ac9a62c69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff16fc7f995045657333a4ac9a62c69c">&#9670;&#160;</a></span>onGenerationError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::onGenerationError </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>error</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel slot">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot wywoływany w przypadku błędu generowania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Komunikat błędu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00112">112</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4698c765707a3a46cc4610e7651919db" name="a4698c765707a3a46cc4610e7651919db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4698c765707a3a46cc4610e7651919db">&#9670;&#160;</a></span>progressUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::progressUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnał informujący o postępie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>Komunikat o postępie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d48604849d66bdaa5e46b196eb745b6" name="a7d48604849d66bdaa5e46b196eb745b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d48604849d66bdaa5e46b196eb745b6">&#9670;&#160;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::run </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Główna funkcja wątku. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00045">45</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a59d7a256cad22f7967dfafeb5fe438d4" name="a59d7a256cad22f7967dfafeb5fe438d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d7a256cad22f7967dfafeb5fe438d4">&#9670;&#160;</a></span>stopThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WorkerThread::stopThread </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zatrzymuje wątek. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8cpp_source.html#l00031">31</a> pliku <a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ae8c3802fa6ac66cb27c6949c8f2e2cae" name="ae8c3802fa6ac66cb27c6949c8f2e2cae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8c3802fa6ac66cb27c6949c8f2e2cae">&#9670;&#160;</a></span>m_generatedCode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString WorkerThread::m_generatedCode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wygenerowany kod. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00106">106</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+
+</div>
+</div>
+<a id="ad1b0a46bdbee93850039a34be16c3ffb" name="ad1b0a46bdbee93850039a34be16c3ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b0a46bdbee93850039a34be16c3ffb">&#9670;&#160;</a></span>m_ollamaClient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ollama_client.html">OllamaClient</a>* WorkerThread::m_ollamaClient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Klient Ollama API. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00103">103</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+
+</div>
+</div>
+<a id="a36eec1580940bc49666aad46d370d41b" name="a36eec1580940bc49666aad46d370d41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36eec1580940bc49666aad46d370d41b">&#9670;&#160;</a></span>m_prompt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString WorkerThread::m_prompt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prompt użytkownika. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00102">102</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+
+</div>
+</div>
+<a id="ac23f8b3cab380bad29e8eb8ddefa3528" name="ac23f8b3cab380bad29e8eb8ddefa3528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23f8b3cab380bad29e8eb8ddefa3528">&#9670;&#160;</a></span>m_pythonExecutor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_python_executor.html">PythonExecutor</a>* WorkerThread::m_pythonExecutor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executor kodu Python. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00104">104</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+
+</div>
+</div>
+<a id="ad8ba7569f70f1c822ca5ed94d4178eb2" name="ad8ba7569f70f1c822ca5ed94d4178eb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8ba7569f70f1c822ca5ed94d4178eb2">&#9670;&#160;</a></span>m_shouldStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool WorkerThread::m_shouldStop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flaga zatrzymania wątku. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="workerthread_8h_source.html#l00105">105</a> pliku <a class="el" href="workerthread_8h_source.html">workerthread.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/src/<a class="el" href="workerthread_8h_source.html">workerthread.h</a></li>
+<li>C:/Users/wojty/Desktop/jpo/pyscript_ai_generator/src/<a class="el" href="workerthread_8cpp_source.html">workerthread.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_worker_thread.html">WorkerThread</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

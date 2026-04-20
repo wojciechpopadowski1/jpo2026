@@ -1,0 +1,69 @@
+# Doxyfile - Konfiguracja dokumentacji Doxygen dla PyScript AI Generator
+
+# Podstawowe ustawienia projektu
+PROJECT_NAME           = "PyScript AI Generator"
+PROJECT_NUMBER         = "1.0.0"
+PROJECT_BRIEF          = "Generator i wykonywacz kodu Python przy użyciu Ollama AI"
+OUTPUT_DIRECTORY       = ./html
+CREATE_SUBDIRS         = NO
+
+# Ustawienia wejściowe
+INPUT                  = ../src
+FILE_PATTERNS          = *.h *.cpp
+RECURSIVE              = YES
+EXCLUDE_PATTERNS       = */build/* */ui_*.h */.git/*
+
+# Język dokumentacji
+OUTPUT_LANGUAGE        = Polish
+
+# Format wyjściowy
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+# Ekstrakcja dokumentacji
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Wyświetlanie kodu źródłowego
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+
+# Diagramy i grafy
+HAVE_DOT               = NO
+CLASS_DIAGRAMS         = YES
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+
+# Ostrzeżenia
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+
+# Optymalizacja dla C++
+OPTIMIZE_OUTPUT_FOR_C  = NO
+CPP_CLI_SUPPORT        = NO
+
+# Przetwarzanie Qt
+QT_AUTOBRIEF           = YES
+
+# Generowanie indeksów
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 5
+
+# Styl dokumentacji
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = NO
+
+# Pokazywanie szczegółów
+SHOW_INCLUDE_FILES     = YES
+SHOW_USED_FILES        = YES
+SHOW_FILES             = YES
+SHOW_NAMESPACES        = YES
