@@ -7,20 +7,6 @@ _deps/googletest-build/googlemock/gmock_main_autogen/timestamp: C:/Qt/Tools/CMak
   _deps/googletest-src/googlemock/CMakeLists.txt \
   _deps/googletest-src/googlemock/cmake/gmock.pc.in \
   _deps/googletest-src/googlemock/cmake/gmock_main.pc.in \
-  _deps/googletest-src/googlemock/src/gmock_main.cc \
-  C:/Qt/Tools/CMake_64/bin/cmake.exe \
-  .qtcreator/cmake-helper/package-manager.cmake \
-  .qtcreator/cmake-helper/qtcreator-project.cmake \
-  _deps/googletest-src/googlemock/CMakeLists.txt \
-  _deps/googletest-src/googlemock/cmake/gmock.pc.in \
-  _deps/googletest-src/googlemock/cmake/gmock_main.pc.in \
-  _deps/googletest-src/googlemock/src/gmock_main.cc \
-  C:/Qt/Tools/CMake_64/bin/cmake.exe \
-  .qtcreator/cmake-helper/package-manager.cmake \
-  .qtcreator/cmake-helper/qtcreator-project.cmake \
-  _deps/googletest-src/googlemock/CMakeLists.txt \
-  _deps/googletest-src/googlemock/cmake/gmock.pc.in \
-  _deps/googletest-src/googlemock/cmake/gmock_main.pc.in \
   _deps/googletest-src/googlemock/src/gmock_main.cc
 
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/gmock_main_autogen/mocs_compilation.cpp.obj: _deps/googletest-build/googlemock/gmock_main_autogen/mocs_compilation.cpp

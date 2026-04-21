@@ -196,7 +196,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PyScriptAI::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PyScriptAI-Debug-b34f5fcc5d323d5a6903.json",
+					"jsonFile" : "target-PyScriptAI-Debug-d2f80cf58dd9e1c87f77.json",
 					"name" : "PyScriptAI",
 					"projectIndex" : 0
 				},
@@ -322,7 +322,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "test_ollama::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-test_ollama-Debug-aaa46377292680a50538.json",
+					"jsonFile" : "target-test_ollama-Debug-0af0aaa2288cce2a7e78.json",
 					"name" : "test_ollama",
 					"projectIndex" : 0
 				},

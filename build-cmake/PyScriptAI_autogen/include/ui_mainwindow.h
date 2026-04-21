@@ -108,7 +108,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 900, 22));
+        menubar->setGeometry(QRect(0, 0, 900, 18));
         menuPlik = new QMenu(menubar);
         menuPlik->setObjectName("menuPlik");
         menuPomoc = new QMenu(menubar);
@@ -139,7 +139,7 @@ public:
         actionOProgramie->setText(QCoreApplication::translate("MainWindow", "O programie", nullptr));
         titleLabel->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; font-weight:700;\">PyScript AI Generator</span></p></body></html>", nullptr));
         promptLabel->setText(QCoreApplication::translate("MainWindow", "Opis zadania (po polsku lub angielsku):", nullptr));
-        generateButton->setText(QCoreApplication::translate("MainWindow", "\360\237\232\200 Generuj i Wykonaj", nullptr));
+        generateButton->setText(QCoreApplication::translate("MainWindow", "Generuj i Wykonaj", nullptr));
         codeLabel->setText(QCoreApplication::translate("MainWindow", "Wygenerowany kod Python:", nullptr));
         codeOutputText->setPlainText(QString());
         executionLabel->setText(QCoreApplication::translate("MainWindow", "Wynik wykonania:", nullptr));

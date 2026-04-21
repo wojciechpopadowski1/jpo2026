@@ -419,11 +419,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "PyScriptAI_autogen::@6890427a1f51a3e7e1df"
+			"id" : "PyScriptAI_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "PyScriptAI_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "PyScriptAI_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "PyScriptAI::@6890427a1f51a3e7e1df",
